@@ -1,0 +1,41 @@
+---
+layout: homepage
+---
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="images/bg.jpg">
+    <div class="container">
+        <div class="row header">
+            <div class="col-sm-4 align-right">
+                <img class="portrait" src="images/portrait.jpg" alt="Portrait"> <!-- change this to jekyll -->
+            </div>
+
+            <div class="col-sm-8 bio">
+                <h1>Hello, my name is {{ site.author }}</h1>
+                <h4>I'm a <strong>Front End Web Developer</strong> based in London.</h4>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row" style="margin-top:25px;">
+        <div class="col-sm-6 web-work">
+            <a href="/work/gearshare"><img src="images/gearshare.jpg" alt="" /></a>
+        </div>
+        <div class="col-sm-6 web-work">
+            <a href="/work/reel35/"><img src="images/reel35.jpg" alt="">
+        </div>
+        <div class="col-sm-6 web-work">
+            <a href="/work/t-reign"><img src="images/t-reign.jpg" alt""></a>
+        </div>
+        <div class="col-sm-6 web-work">
+            <a href="/work/iluvyou"><img src="images/iluvyou.jpg" alt=""></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    goFull = $( window ).innerHeight();
+    $( '.parallax-window' ).css("height", goFull);
+</script>

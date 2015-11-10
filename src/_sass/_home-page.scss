@@ -1,0 +1,36 @@
+.parallax-window {
+    background: transparent;
+}
+
+.header {
+	margin-top:25%;
+}
+
+.portrait {
+	border-radius:5000px;
+	height:150px;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.bio {
+	color:white;
+}
+
+.web-work {
+	text-align:center;
+	margin-top:25px;
+	margin-bottom:25px;
+
+	img {
+		transition: 0.5s ease;
+		max-height: 505px;
+		border-radius:1px;
+		border-bottom:2px solid transparent;
+			&:hover {
+				border-bottom:2px solid rgb(150,150,150);	
+			}
+		}
+}
