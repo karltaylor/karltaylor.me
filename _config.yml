@@ -6,11 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
+title: karltaylor.me
 description: The work of Karl Taylor. A Front-End Web Developer based in London.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://karltaylor.me" # the base hostname & protocol for your site
 
-twitter_username: karltaylor_ 
+twitter_username: karltaylor_
+github_username: karltaylor
 author: Karl Taylor
 email: karl_taylor@me.com
 
