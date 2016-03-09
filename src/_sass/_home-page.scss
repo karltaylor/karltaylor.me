@@ -1,3 +1,7 @@
+body {
+  font-family: helvetica;
+}
+
 .parallax-window {
     background: transparent;
 }
@@ -12,11 +16,24 @@
 }
 
 .align-right {
-	text-align:right;
+	text-align:center;
+}
+
+@media (min-width:768px) {
+  .align-right {
+    text-align:right;
+  }
 }
 
 .bio {
-	color:white;
+  text-align: center;
+	color: white;
+}
+
+@media (min-width: 768px) {
+  .bio {
+    text-align: left;
+  }
 }
 
 .web-work {
@@ -30,7 +47,15 @@
 		border-radius:1px;
 		border-bottom:2px solid transparent;
 			&:hover {
-				border-bottom:2px solid rgb(150,150,150);	
+				border-bottom:2px solid rgb(150,150,150);
 			}
 		}
+}
+
+.subheader {
+  font-weight:200;
+}
+
+.thin {
+  font-weight: 100;
 }
