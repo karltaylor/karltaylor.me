@@ -7,49 +7,46 @@ body {
 }
 
 .header {
-	margin-top:25%;
+  margin-top:25%;
 }
 
 .portrait {
-	border-radius:5000px;
-	height:150px;
+  border-radius:5000px;
+  height:150px;
 }
 
 .align-right {
-	text-align:center;
-}
-
-@media (min-width:768px) {
-  .align-right {
-    text-align:right;
-  }
+  text-align:center;
 }
 
 .bio {
   text-align: center;
-	color: white;
+  color: white;
 }
 
 @media (min-width: 768px) {
   .bio {
     text-align: left;
   }
+  .align-right {
+    text-align:right;
+  }
 }
 
 .web-work {
-	text-align:center;
-	margin-top:25px;
-	margin-bottom:25px;
+  text-align:center;
+  margin-top:25px;
+  margin-bottom:25px;
 
-	img {
-		transition: 0.5s ease;
-		max-height: 505px;
-		border-radius:1px;
-		border-bottom:2px solid transparent;
-			&:hover {
-				border-bottom:2px solid rgb(150,150,150);
-			}
-		}
+  img {
+    width: 100%;
+    transition: 0.5s ease;
+    border-radius:1px;
+    border-bottom:2px solid transparent;
+      &:hover {
+        border-bottom:2px solid rgb(150,150,150);
+      }
+    }
 }
 
 .subheader {
@@ -71,4 +68,14 @@ body {
             fill: $grey-color;
         }
     }
+}
+
+.current {
+  width: 100%;
+  display: table;
+  background-color: #111;
+}
+
+.yellow {
+  color: #fdd80a
 }
