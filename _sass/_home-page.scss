@@ -65,17 +65,7 @@ body {
     vertical-align: middle;
 
     path {
-      fill: $grey-color;
+      fill: #828282;
     }
   }
-}
-
-.current {
-  width: 100%;
-  display: table;
-  background-color: #111;
-}
-
-.yellow {
-  color: #fdd80a
 }
