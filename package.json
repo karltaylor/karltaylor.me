@@ -1,0 +1,19 @@
+{
+  "name": "karltaylor.me",
+  "version": "1.0.0",
+  "description": "Personal website built using Jekyll.",
+  "main": "",
+  "scripts": {
+    "dev": "jekyll s --baseurl ''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karltaylor/karltaylor.me.git"
+  },
+  "author": "Karl Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karltaylor/karltaylor.me/issues"
+  },
+  "homepage": "http://karltaylor.me"
+}
