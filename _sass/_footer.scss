@@ -1,7 +1,29 @@
 footer {
   background: white;
   margin: 0;
+  max-height: 160px;
   .container {
     padding: 75px 0;
+  }
+}
+
+a.footer__link--icon {
+  margin: 5px;
+  svg {
+    width: 30px;
+    transition: 0.5s all;
+    path {
+      fill: #f0f0f0;
+      transition: 0.5s all;
+    }
+  }
+  &:hover {
+    text-decoration: none;
+    svg {
+      width: 35px;
+      path {
+        fill: #828282;
+      }
+    }
   }
 }
