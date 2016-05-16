@@ -1,4 +1,6 @@
 body {
+  background: rgb(240,240,240);
+  margin: 30px;
   font-family: helvetica;
 }
 
@@ -24,8 +26,11 @@ body {
   color: white;
 }
 
+section.portfolio-work {
+  background: white;
+}
 section.work-with-me {
-  margin-top: 50px;
+  margin: 50px 0;
   padding: 10px 0 35px 0;
   color: #5A5A5A;
   font-family: 'Ubuntu', sans-serif;
