@@ -4,19 +4,13 @@ title: karltaylor.me - The work of London based web developer Karl Taylor
 ---
 
 <div class="parallax-window" data-parallax="scroll" data-image-src="images/bg.jpg">
-    <div class="container">
-        <div class="row header">
-            <div class="col-sm-4 align-right">
-                <img class="portrait" src="images/portrait.jpg" alt="Portrait"> <!-- change this to jekyll -->
-            </div>
-
-            <div class="col-sm-8 bio">
-                <h1 class="thin">Hello, my name is <strong>{{ site.author }}</strong></h1>
-                <h4 class="subheader">I'm a <strong>Front End Web Developer</strong> based in London.</h4>
-            </div>
-
-        </div>
+  <div class="home-page__header-container">
+    <div class="home-page__header">
+      <img class="portrait" src="images/portrait.jpg" alt="Portrait"> <!-- change this to jekyll -->
+      <h1 class="thin">Hello, my name is <strong>{{ site.author }}</strong></h1>
+      <h4 class="subheader">I'm a <strong>Front End Web Developer</strong> based in London.</h4>
     </div>
+  </div>
 </div>
 
 <section class="portfolio-work">
@@ -50,6 +44,6 @@ title: karltaylor.me - The work of London based web developer Karl Taylor
 </section>
 
 <script>
-    goFull = $( window ).innerHeight();
+    goFull = $( window ).innerHeight() - 60;
     $( '.parallax-window' ).css("height", goFull);
 </script>
