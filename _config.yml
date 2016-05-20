@@ -13,3 +13,5 @@ email: "&#107;&#097;&#114;&#108;&#095;&#116;&#097;&#121;&#108;&#111;&#114;&#064;
 
 # Build settings
 markdown: kramdown
+
+exclude: [deploy, npm-debug.log, package.json, readme.md]
