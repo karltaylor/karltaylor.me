@@ -3,6 +3,7 @@ echo 'Running Deploy Script'
 echo 'Merging Develop into Master'
 git co master
 git merge develop
+git push
 git co gh-pages
 git merge master
 git push
