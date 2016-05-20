@@ -1,9 +1,21 @@
-#!/bin/bash
-echo 'Running Deploy Script'
-echo 'Merging Develop into Master'
-git co master
-git merge develop
-git push
-git co gh-pages
-git merge master
-git push
+# #!/bin/bash
+
+
+get_branch_name=$(git symbolic-ref -q HEAD)
+Length=8
+branch_name=${get_branch_name:11:Length}
+echo ${branch_name}
+
+if [ $branch_name != develop ]
+then
+  echo "ERROR: You're not on the develop branch"
+else
+  echo 'Running Deploy Script'
+  echo 'Merging Develop into Master'
+  git co master
+  git merge develop
+  git push
+  git co gh-pages
+  git merge master
+  git push
+fi
