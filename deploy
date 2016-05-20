@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# colors
+green=$'\e[32m'
+red=$'\e[31m'
+yellow=$'\e[33m'
+rs=$'\e[0m'
+
+### vars
+get_branch_name=$(git symbolic-ref -q HEAD)
+Length=8
+branch_name=${get_branch_name:11:Length}
+
+if [ $branch_name != develop ]
+then
+  echo $red"ERROR: You are not on the develop branch. Commit changes and merge into develop and re-run ./deploy"
+  read -r -p $yellow"Would you like to switch to the develop branch now? [y/N] " response
+  if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]
+  then
+      echo $yellow'Switching to develop branch'$rs
+      git co develop
+  else
+      return
+  fi
+else
+  echo $green'---------------------'
+  echo $green'Running Deploy Script'
+  echo $green'---------------------'
+  echo $yellow'Step 1. Switching to master branch.'$rs
+  git co master
+  echo $yellow'Step 2. Merging develop branch into master branch.'$rs
+  git merge develop
+  echo $yellow'Step 3. Pushing master to github.'$rs
+  git push
+  echo $yellow'Step 4. Switching to gh-pages branch'$rs
+  git co gh-pages
+  echo $yellow'Step 5. Merging master into gh-pages.'$rs
+  git merge master
+  echo $yellow'Step 6. Pushing gh-pages to github.'$rs
+  git push
+  echo $green'Successfully Deployed'
+fi
