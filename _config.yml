@@ -3,7 +3,6 @@
 # Site settings
 title: karltaylor.me
 description: The work of Karl Taylor. A Front-End Web Developer based in London.
-baseurl: "http://karltaylor.github.io/karltaylor.me" # the subpath of your site, e.g. /blog
 url: "http://karltaylor.me" # the base hostname & protocol for your site
 
 twitter_username: karltaylor_
@@ -15,3 +14,6 @@ email: "&#107;&#097;&#114;&#108;&#095;&#116;&#097;&#121;&#108;&#111;&#114;&#064;
 markdown: kramdown
 
 exclude: [deploy, npm-debug.log, package.json, readme.md]
+
+# Serving
+baseurl: "http://karltaylor.github.io/karltaylor.me" # the subpath of your site, e.g. /blog
