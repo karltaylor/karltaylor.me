@@ -1,9 +1,11 @@
 body {
   background: rgb(240,240,240);
-  font-family: helvetica;
   margin: 0;
   @media (min-width: 768px) {
     margin: 30px;
+    .container {
+      width: calc(750px - 60px);
+    }
   }
 }
 
@@ -86,10 +88,9 @@ section.work-with-me {
 }
 
 .web-work {
-  text-align:center;
   margin-top:25px;
   margin-bottom:25px;
-
+  font-family: 'Lato';
   img {
     width: 100%;
     transition: 0.5s ease;
@@ -101,6 +102,35 @@ section.work-with-me {
     }
 }
 
+.overlay-container {
+  background: white;
+  width: calc(100% - 30px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.9;
+  }
+  .overlay-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    text-align: center;
+  }
+}
+
+// Font Stuff
+.content-header {
+  font-size: 20px;
+  color: #E65100;
+}
+.content-desc {
+  color: black;
+}
 .subheader {
   font-weight: 200;
 }
