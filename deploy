@@ -26,17 +26,8 @@ else
   echo $green'---------------------'
   echo $green'Running Deploy Script'
   echo $green'---------------------'
-  echo $yellow'Step 1. Switching to master branch.'$rs
-  git co master
-  echo $yellow'Step 2. Merging develop branch into master branch.'$rs
-  git merge develop
-  echo $yellow'Step 3. Pushing master to github.'$rs
-  git push
-  echo $yellow'Step 4. Switching to gh-pages branch'$rs
   git co gh-pages
-  echo $yellow'Step 5. Merging master into gh-pages.'$rs
-  git merge master
-  echo $yellow'Step 6. Pushing gh-pages to github.'$rs
-  git push
+  git merge develop
+  git push --all origin
   echo $green'Successfully Deployed'
 fi
