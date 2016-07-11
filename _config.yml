@@ -16,3 +16,6 @@ exclude: [deploy, npm-debug.log, package.json, readme.md]
 
 # Serving
 baseurl: "http://karltaylor.github.io/karltaylor.me" # the subpath of your site, e.g. /blog
+
+gems:
+  - octopress-minify-html
